@@ -24,6 +24,7 @@
     <ProjectGuid>{575aa947-0594-47e5-a089-d8bc4d41cfbb}</ProjectGuid>
     <RootNamespace>Junior</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>JunWorker</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -88,6 +89,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\chupakabra\source\repos\Junior;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -140,6 +142,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Junior.cpp" />
+    <ClCompile Include="JuniorWorker.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Address.h" />
+    <ClInclude Include="Date.h" />
+    <ClInclude Include="Junior.h" />
+    <ClInclude Include="Language.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

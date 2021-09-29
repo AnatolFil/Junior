@@ -13,10 +13,42 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Entities">
+      <UniqueIdentifier>{559f344f-c02b-4d3c-a638-2e6ae76a8c3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Junior">
+      <UniqueIdentifier>{c414a8fb-10d5-46ad-9f70-f08799e3b64f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Date">
+      <UniqueIdentifier>{5280e3f3-b719-4365-a0fa-98058e437800}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Address">
+      <UniqueIdentifier>{576f514e-239e-42a7-9fdd-d405faaca4d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Language">
+      <UniqueIdentifier>{c1694145-a823-4b1b-ae15-698efb1bd915}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Junior.cpp">
+    <ClCompile Include="JuniorWorker.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Junior.cpp">
+      <Filter>Entities\Junior</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Junior.h">
+      <Filter>Entities\Junior</Filter>
+    </ClInclude>
+    <ClInclude Include="Date.h">
+      <Filter>Entities\Date</Filter>
+    </ClInclude>
+    <ClInclude Include="Address.h">
+      <Filter>Entities\Address</Filter>
+    </ClInclude>
+    <ClInclude Include="Language.h">
+      <Filter>Entities\Language</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
