@@ -1,6 +1,8 @@
 #pragma once
 
 #include<TCHAR.H>
+#include <time.h>
+#include <DateException.h>
 
 //Date entity
 class Date
@@ -9,6 +11,7 @@ class Date
 		int Day;
 		int Month;
 		int Year;
+		
 
 	public:
 		void SetDay(int _Day);
@@ -20,4 +23,5 @@ class Date
 		int GetDay();
 		int GetMonth();
 		int GetYear();
+		static Date GetCurrentDate();
 };

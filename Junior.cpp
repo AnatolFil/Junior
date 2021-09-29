@@ -1,6 +1,6 @@
 #include <Junior.h>
 
-Junior::Junior() : Name{}, SecondName{}, SurName{}, Burthday(), Adr(), Phone{}, Specialization(C) ,YearOfWork(0)
+Junior::Junior() : Name{}, SecondName{}, SurName{}, Birthday(), Adr(), Phone{}, Specialization(C) ,YearOfWork(0)
 {
 }
 
@@ -11,9 +11,9 @@ Junior::Junior(_TCHAR _Name[255], _TCHAR _SecondName[255], _TCHAR _SurName[255])
 	SetSurName(_SurName);
 }
 
-Junior::Junior(_TCHAR _Name[255], _TCHAR _SecondName[255], _TCHAR _SurName[255], Date _Burthday): Junior(_Name, _SecondName, _SurName)
+Junior::Junior(_TCHAR _Name[255], _TCHAR _SecondName[255], _TCHAR _SurName[255], Date _Birthday): Junior(_Name, _SecondName, _SurName)
 {
-	SetBurthday(_Burthday);
+	SetBirthday(_Birthday);
 }
 
 _TCHAR* Junior::GetName()
@@ -31,9 +31,9 @@ _TCHAR* Junior::GetSurName()
 	return SurName;
 }
 
-Date Junior::GetBurthday()
+Date Junior::GetBirthday()
 {
-	return Burthday;
+	return Birthday;
 }
 
 Address Junior::GetAdr()
@@ -92,9 +92,9 @@ void Junior::SetSurName(_TCHAR _SurName[255])
 	_tcscpy_s(SurName, _SurName);
 }
 
-void Junior::SetBurthday(Date _Burthday)
+void Junior::SetBirthday(Date _Birthday)
 {
-	Burthday = _Burthday;
+	Birthday = _Birthday;
 }
 
 void Junior::SetAdr(Address _Adr)

@@ -15,7 +15,7 @@ class Junior
 		_TCHAR Name[255];
 		_TCHAR SecondName[255];
 		_TCHAR SurName[255];
-		Date Burthday;
+		Date Birthday;
 		Address Adr;
 		_TCHAR Phone[255];
 		//Language which junion uses
@@ -26,7 +26,7 @@ class Junior
 		void SetName(_TCHAR _Name[255]);
 		void SetSecondName(_TCHAR _SecondName[255]);
 		void SetSurName(_TCHAR _SurName[255]);
-		void SetBurthday(Date _Burthday);
+		void SetBirthday(Date _Burthday);
 		void SetAdr(Address _Adr);
 		void SetPhone(_TCHAR _Phone[255]);
 		void SetSpecialization(Language _Specialization);
@@ -39,7 +39,7 @@ class Junior
 		_TCHAR* GetName();
 		_TCHAR* GetSecondName();
 		_TCHAR* GetSurName();
-		Date GetBurthday();
+		Date GetBirthday();
 		Address GetAdr();
 		_TCHAR* GetPhone();
 		Language GetSpecialization();

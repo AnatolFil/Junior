@@ -28,11 +28,14 @@
     <Filter Include="Entities\Language">
       <UniqueIdentifier>{c1694145-a823-4b1b-ae15-698efb1bd915}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Validator">
+    <Filter Include="Validators">
       <UniqueIdentifier>{f1ed229a-07d4-4191-ad3d-cedfa68e0022}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Exception">
+    <Filter Include="Exceptions">
       <UniqueIdentifier>{052f9f0e-9c4a-4bdb-b5b5-25dd457dfde0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Handlers">
+      <UniqueIdentifier>{7833d08f-f3cf-4a03-8760-2bc8c9e2ccf2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -49,10 +52,13 @@
       <Filter>Entities\Address</Filter>
     </ClCompile>
     <ClCompile Include="DateValidator.cpp">
-      <Filter>Validator</Filter>
+      <Filter>Validators</Filter>
     </ClCompile>
     <ClCompile Include="AddressValidator.cpp">
-      <Filter>Validator</Filter>
+      <Filter>Validators</Filter>
+    </ClCompile>
+    <ClCompile Include="JuniorValidator.cpp">
+      <Filter>Validators</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -69,25 +75,28 @@
       <Filter>Entities\Language</Filter>
     </ClInclude>
     <ClInclude Include="JuniorValidator.h">
-      <Filter>Validator</Filter>
+      <Filter>Validators</Filter>
     </ClInclude>
     <ClInclude Include="DateValidator.h">
-      <Filter>Validator</Filter>
+      <Filter>Validators</Filter>
     </ClInclude>
     <ClInclude Include="AddressValidator.h">
-      <Filter>Validator</Filter>
+      <Filter>Validators</Filter>
     </ClInclude>
     <ClInclude Include="MyException.h">
-      <Filter>Exception</Filter>
+      <Filter>Exceptions</Filter>
     </ClInclude>
     <ClInclude Include="DateException.h">
-      <Filter>Exception</Filter>
+      <Filter>Exceptions</Filter>
     </ClInclude>
     <ClInclude Include="AddressException.h">
-      <Filter>Exception</Filter>
+      <Filter>Exceptions</Filter>
     </ClInclude>
     <ClInclude Include="JuniorException.h">
-      <Filter>Exception</Filter>
+      <Filter>Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="DateHandlerInput.h">
+      <Filter>Handlers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
