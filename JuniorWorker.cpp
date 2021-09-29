@@ -12,6 +12,7 @@ using namespace std;
 Junior* MockForJun();
 void FindAndShowBySpecializationCurrentYear();
 void ShowJunsBornAfterYear();
+void ShowJunsByYearAndSpecialization();
 
 int main()
 {
@@ -21,8 +22,9 @@ int main()
     
     try
     {
-        FindAndShowBySpecializationCurrentYear();
-        ShowJunsBornAfterYear();
+        //FindAndShowBySpecializationCurrentYear();
+        //ShowJunsBornAfterYear();
+        ShowJunsByYearAndSpecialization();
         //int i = 0;
     }
     catch (const std::exception &ex)
@@ -97,6 +99,49 @@ void ShowJunsBornAfterYear()
     delete Juniors;
     delete SelJuniors;
 }
+
+bool compare(Junior wrd1, Junior wrd2)
+{
+    if(strcmp(wrd1.GetSpecialization(), wrd2.GetSpecialization()) > 0)
+        return true;
+
+    return false;
+}
+
+void ShowJunsByYearAndSpecialization()
+{
+    Junior* Juniors;
+    Juniors = MockForJun();
+    Junior* SelJuniors = new Junior[10];
+
+    cout << "List os Juniors" << endl;
+    for (int i = 0;i < 10;i++)
+    {
+        JuniorHandlerOutput::Show(Juniors[i]);
+    }
+    cout << "////////////////////////////////////////Show by Year/////////////////" << endl;
+    cout << "////////////////////////////////////////Proccessing//////////////////" << endl;
+    JuniorHandlerOutput::SortByBirthYear(Juniors, 10);
+    for (int i = 0;i < 10;i++)
+    {
+        JuniorHandlerOutput::Show(Juniors[i]);
+        cout << "////////////////////////////////////////" << endl;
+    }
+    
+    cout << "////////////////////////////////////////Finished//////////////////" << endl;
+    JuniorHandlerOutput::SortByBirthSpecialization(Juniors, 10, compare);
+    cout << "////////////////////////////////////////Show by Specialization/////////////////" << endl;
+    cout << "////////////////////////////////////////Proccessing//////////////////" << endl;
+    for (int i = 0;i < 10;i++)
+    {
+        JuniorHandlerOutput::Show(Juniors[i]);
+        cout << "////////////////////////////////////////" << endl;
+    }
+    cout << "////////////////////////////////////////Finished//////////////////" << endl;
+    delete []Juniors;
+    delete []SelJuniors;
+}
+
 
 Junior* MockForJun()
 {

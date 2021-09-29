@@ -4,6 +4,7 @@
 #include <Junior.h>
 #include <DateHandlerOutput.h>
 #include <AddressHandlerOutput.h>
+#include <algorithm>
 
 class JuniorHandlerOutput
 {
@@ -18,4 +19,6 @@ class JuniorHandlerOutput
 		static void FindBySpecialization(Junior *Juns, int count, _TCHAR Specialization[], Junior* OUTJuns, int *OUTCount);
 		static void FindByYearOfWork(Junior* Juns, int count, int YearOfWork, Junior* OUTJuns, int* OUTCount);
 		static void FindAfterBirthYear(Junior* Juns, int count, int BithYear, Junior* OUTJuns, int* OUTCount);
+		static void SortByBirthYear(Junior* Juns, int count);
+		static void SortByBirthSpecialization(Junior* Juns, int count, bool (*f)(Junior, Junior));
 };
