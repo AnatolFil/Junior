@@ -19,22 +19,27 @@ class Junior
 		Address Adr;
 		_TCHAR Phone[255];
 		//Language which junion uses
-		Language Specialization;
+		_TCHAR Specialization[255];
 		//How many years junior`s been working
 		int YearOfWork;
 	public:
 		void SetName(_TCHAR _Name[255]);
+		void SetName(const _TCHAR _Name[]);
 		void SetSecondName(_TCHAR _SecondName[255]);
+		void SetSecondName(const _TCHAR _SecondName[]);
 		void SetSurName(_TCHAR _SurName[255]);
+		void SetSurName(const _TCHAR _SurName[]);
 		void SetBirthday(Date _Burthday);
 		void SetAdr(Address _Adr);
 		void SetPhone(_TCHAR _Phone[255]);
-		void SetSpecialization(Language _Specialization);
+		void SetPhone(const _TCHAR _Phone[]);
+		void SetSpecialization(const _TCHAR _Specialization[]);
 		void SetYearOfWork(int _YearOfWork);
 
 		Junior();
-		Junior(_TCHAR _Name[255], _TCHAR _SecondName[255], _TCHAR _SurName[255]);
-		Junior(_TCHAR _Name[255], _TCHAR _SecondName[255], _TCHAR _SurName[255], Date _Burthday);		
+		Junior(const _TCHAR _Name[], const _TCHAR _SecondName[], const _TCHAR _SurName[], Date _Birthday, Address _Adr, int YearOfWork, const _TCHAR _Phone[], const _TCHAR _Specializaton[]);
+		Junior(_TCHAR _Name[], _TCHAR _SecondName[], _TCHAR _SurName[], Date _Burthday, Address _Adr);
+		//Junior(const _TCHAR _Name[], const _TCHAR _SecondName[], const _TCHAR _SurName[], Date _Birthday, Address _Adr, const _TCHAR _Phone[], int YearOfWork, Language _Specializaton);
 
 		_TCHAR* GetName();
 		_TCHAR* GetSecondName();
@@ -42,7 +47,7 @@ class Junior
 		Date GetBirthday();
 		Address GetAdr();
 		_TCHAR* GetPhone();
-		Language GetSpecialization();
+		_TCHAR* GetSpecialization();
 		int GetYearOfWork();
 
 		string ToString();

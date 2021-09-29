@@ -10,24 +10,24 @@ void AddressValidator::Validate(Address Adr)
 
 void AddressValidator::ValidateCountry(_TCHAR* Country)
 {
-	if (strlen(Country) <= 1)
+	if (_tclen(Country) <= 1)
 		throw AddressException("Too short name of country.");
 }
 
 void AddressValidator::ValidateCity(_TCHAR* City)
 {
-	if (strlen(City) <= 1)
+	if (_tclen(City) <= 1)
 		throw AddressException("Too short name of city.");
 }
 
 void AddressValidator::ValidateStreet(_TCHAR* Street)
 {
-	if (strlen(Street) <= 1)
+	if (_tclen(Street) <= 1)
 		throw AddressException("Too short name of street.");
 }
 
 void AddressValidator::ValidateHouseNumber(_TCHAR* HouseNumber)
 {
-	if (strlen(HouseNumber) <= 0)
+	if (_tclen(HouseNumber) <= 0)
 		throw AddressException("Too short house number.");
 }

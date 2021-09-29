@@ -60,6 +60,24 @@
     <ClCompile Include="JuniorValidator.cpp">
       <Filter>Validators</Filter>
     </ClCompile>
+    <ClCompile Include="DateHandlerInput.cpp">
+      <Filter>Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="AddressHandlerInput.cpp">
+      <Filter>Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="JuniorHandlerInput.cpp">
+      <Filter>Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="DateHandlerOutput.cpp">
+      <Filter>Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="AddressHandlerOutput.cpp">
+      <Filter>Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="JuniorHandlerOutput.cpp">
+      <Filter>Handlers</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Junior.h">
@@ -96,6 +114,21 @@
       <Filter>Exceptions</Filter>
     </ClInclude>
     <ClInclude Include="DateHandlerInput.h">
+      <Filter>Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="AddressHandlerInput.h">
+      <Filter>Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="JuniorHandlerInput.h">
+      <Filter>Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="DateHandlerOutput.h">
+      <Filter>Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="AddressHandlerOutput.h">
+      <Filter>Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="JuniorHandlerOutput.h">
       <Filter>Handlers</Filter>
     </ClInclude>
   </ItemGroup>

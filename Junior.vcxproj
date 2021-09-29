@@ -142,23 +142,34 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Address.cpp" />
+    <ClCompile Include="AddressHandlerInput.cpp" />
+    <ClCompile Include="AddressHandlerOutput.cpp" />
     <ClCompile Include="AddressValidator.cpp" />
     <ClCompile Include="Date.cpp" />
+    <ClCompile Include="DateHandlerInput.cpp" />
+    <ClCompile Include="DateHandlerOutput.cpp" />
     <ClCompile Include="DateValidator.cpp" />
     <ClCompile Include="Junior.cpp" />
+    <ClCompile Include="JuniorHandlerInput.cpp" />
+    <ClCompile Include="JuniorHandlerOutput.cpp" />
     <ClCompile Include="JuniorValidator.cpp" />
     <ClCompile Include="JuniorWorker.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Address.h" />
     <ClInclude Include="AddressException.h" />
+    <ClInclude Include="AddressHandlerInput.h" />
+    <ClInclude Include="AddressHandlerOutput.h" />
     <ClInclude Include="AddressValidator.h" />
     <ClInclude Include="Date.h" />
     <ClInclude Include="DateException.h" />
     <ClInclude Include="DateHandlerInput.h" />
+    <ClInclude Include="DateHandlerOutput.h" />
     <ClInclude Include="DateValidator.h" />
     <ClInclude Include="Junior.h" />
     <ClInclude Include="JuniorException.h" />
+    <ClInclude Include="JuniorHandlerInput.h" />
+    <ClInclude Include="JuniorHandlerOutput.h" />
     <ClInclude Include="JuniorValidator.h" />
     <ClInclude Include="Language.h" />
     <ClInclude Include="MyException.h" />

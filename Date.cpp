@@ -42,6 +42,13 @@ Date::Date(): Day(1), Month(1), Year(1990)
 	
 }
 
+Date::Date(int _Day, int _Month, int _Year)
+{
+	Day = _Day;
+	Month = _Month;
+	Year = _Year;
+}
+
 int Date::GetDay()
 {
 	return Day;

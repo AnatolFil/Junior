@@ -19,6 +19,7 @@ class Date
 		void SetYear(int _Year);
 
 		Date();
+		Date(int _Day, int _Month, int _Year);
 
 		int GetDay();
 		int GetMonth();
