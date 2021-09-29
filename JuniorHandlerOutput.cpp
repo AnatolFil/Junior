@@ -71,15 +71,16 @@ void JuniorHandlerOutput::FindByYearOfWork(Junior* Juns, int count, int YearOfWo
 	*OUTCount = ind;
 }
 
-void JuniorHandlerOutput::FindByBirthday(Junior* Juns, int count, int Bithday, Junior* OUTJuns)
+void JuniorHandlerOutput::FindAfterBirthYear(Junior* Juns, int count, int BithYear, Junior* OUTJuns, int* OUTCount)
 {
 	int ind = 0;
 	for (int i = 0;i < count;i++)
 	{
-		if (Juns[i].GetBirthday().GetYear() == Bithday)
+		if (Juns[i].GetBirthday().GetYear() > BithYear)
 		{
 			OUTJuns[ind] = Juns[i];
 			ind++;
 		}
 	}
+	*OUTCount = ind;
 }

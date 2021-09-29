@@ -11,7 +11,7 @@
 using namespace std;
 Junior* MockForJun();
 void FindAndShowBySpecializationCurrentYear();
-void ShowJunsBySpecializationAndYear()
+void ShowJunsBornAfterYear();
 
 int main()
 {
@@ -21,7 +21,8 @@ int main()
     
     try
     {
-        FindBySpecializationCurrentYear();
+        FindAndShowBySpecializationCurrentYear();
+        ShowJunsBornAfterYear();
         //int i = 0;
     }
     catch (const std::exception &ex)
@@ -31,7 +32,7 @@ int main()
     std::cout << "";
 }
 
-void FindBySpecializationCurrentYear()
+void FindAndShowBySpecializationCurrentYear()
 {
     Junior* Juniors;
     Juniors = MockForJun();
@@ -61,13 +62,40 @@ void FindBySpecializationCurrentYear()
     cout << "////////////////////////////////////////Finished//////////////////" << endl;
 
     delete Juniors;
-    delete SelJuniors;
-    delete SelJuniorsThisYear;
+    delete []SelJuniors;
+    delete []SelJuniorsThisYear;
 }
 
-void ShowJunsBySpecializationAndYear()
+void ShowJunsBornAfterYear()
 {
+    Junior* Juniors;
+    Juniors = MockForJun();
+    Junior* SelJuniors = new Junior[10];
 
+    cout << "List os Juniors" << endl;
+    for (int i = 0;i < 10;i++)
+    {
+        JuniorHandlerOutput::Show(Juniors[i]);
+    }
+    cout << "////////////////////////////////////////" << endl;
+    cout << "a) Chose Year" << endl;
+    int Year = 1900;
+    cin >> Year;
+    cout << "List of Junior born after " << Year << endl;
+    cout << "////////////////////////////////////////Proccessing//////////////////" << endl;
+    int OUTCount = 0;
+    JuniorHandlerOutput::FindAfterBirthYear(Juniors, 10, Year, SelJuniors, &OUTCount);
+    
+    for (int i = 0;i < OUTCount;i++)
+    {
+        JuniorHandlerOutput::Show(SelJuniors[i]);
+        cout << "////////////////////////////////////////" << endl;
+    }
+    cout << "////////////////////////////////////////Finded " << OUTCount << endl;
+    cout << "////////////////////////////////////////Finished//////////////////" << endl;
+
+    delete Juniors;
+    delete SelJuniors;
 }
 
 Junior* MockForJun()
