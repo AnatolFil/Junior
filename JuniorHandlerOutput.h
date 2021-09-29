@@ -15,4 +15,7 @@ class JuniorHandlerOutput
 		static void ShowYearOfWork(Junior Jun);
 		static void ShowPhone(Junior Jun);
 		static void Show(Junior Jun);
+		static void FindBySpecialization(Junior *Juns, int count, _TCHAR Specialization[], Junior* OUTJuns, int *OUTCount);
+		static void FindByYearOfWork(Junior* Juns, int count, int YearOfWork, Junior* OUTJuns, int* OUTCount);
+		static void FindByBirthday(Junior* Juns, int count, int Bithday, Junior* OUTJuns);
 };
