@@ -36,6 +36,12 @@
     <ClCompile Include="Junior.cpp">
       <Filter>Entities\Junior</Filter>
     </ClCompile>
+    <ClCompile Include="Date.cpp">
+      <Filter>Entities\Date</Filter>
+    </ClCompile>
+    <ClCompile Include="Address.cpp">
+      <Filter>Entities\Address</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Junior.h">

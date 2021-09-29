@@ -141,6 +141,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Address.cpp" />
+    <ClCompile Include="Date.cpp" />
     <ClCompile Include="Junior.cpp" />
     <ClCompile Include="JuniorWorker.cpp" />
   </ItemGroup>

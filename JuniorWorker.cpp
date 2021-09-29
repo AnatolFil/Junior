@@ -2,9 +2,16 @@
 //
 
 #include <iostream>
+#include <Junior.h>
 
 int main()
 {
+    Junior j;
+    _TCHAR name[] = _T("sdfsdaf");
+    
+    j.SetName(name);
+    Junior j1 = Junior(name, name, name);
+    Junior j2 = Junior(name, name, name, Date());
     std::cout << "Hello World!\n";
 }
 

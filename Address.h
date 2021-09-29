@@ -2,6 +2,7 @@
 
 #include<TCHAR.H>
 
+//Address entity
 class Address
 {
 	private:
@@ -9,4 +10,16 @@ class Address
 		_TCHAR City[255];
 		_TCHAR Street[255];
 		_TCHAR HouseNumber[255];
+	public:
+		void SetCounty(_TCHAR _Country[255]);
+		void SetCity(_TCHAR _City[255]);
+		void SetStreet(_TCHAR _Street[255]);
+		void SetHouseNumber(_TCHAR _HouseNumber[255]);
+
+		Address();
+
+		_TCHAR* GetCounty();
+		_TCHAR* GetCity();
+		_TCHAR* GetStreet();
+		_TCHAR* GetHouseNumber();
 };
