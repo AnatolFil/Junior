@@ -28,6 +28,12 @@
     <Filter Include="Entities\Language">
       <UniqueIdentifier>{c1694145-a823-4b1b-ae15-698efb1bd915}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Validator">
+      <UniqueIdentifier>{f1ed229a-07d4-4191-ad3d-cedfa68e0022}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exception">
+      <UniqueIdentifier>{052f9f0e-9c4a-4bdb-b5b5-25dd457dfde0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="JuniorWorker.cpp">
@@ -42,6 +48,12 @@
     <ClCompile Include="Address.cpp">
       <Filter>Entities\Address</Filter>
     </ClCompile>
+    <ClCompile Include="DateValidator.cpp">
+      <Filter>Validator</Filter>
+    </ClCompile>
+    <ClCompile Include="AddressValidator.cpp">
+      <Filter>Validator</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Junior.h">
@@ -55,6 +67,27 @@
     </ClInclude>
     <ClInclude Include="Language.h">
       <Filter>Entities\Language</Filter>
+    </ClInclude>
+    <ClInclude Include="JuniorValidator.h">
+      <Filter>Validator</Filter>
+    </ClInclude>
+    <ClInclude Include="DateValidator.h">
+      <Filter>Validator</Filter>
+    </ClInclude>
+    <ClInclude Include="AddressValidator.h">
+      <Filter>Validator</Filter>
+    </ClInclude>
+    <ClInclude Include="MyException.h">
+      <Filter>Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="DateException.h">
+      <Filter>Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="AddressException.h">
+      <Filter>Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="JuniorException.h">
+      <Filter>Exception</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -4,7 +4,9 @@
 #include<Address.h>
 #include<Language.h>
 #include<mbstring.h>
+#include <string>
 
+using namespace std;
 //Presents entity Junior
 class Junior
 {
@@ -42,4 +44,7 @@ class Junior
 		_TCHAR* GetPhone();
 		Language GetSpecialization();
 		int GetYearOfWork();
+
+		string ToString();
+		char* ToCharArray();
 };

@@ -56,6 +56,27 @@ int Junior::GetYearOfWork()
 	return YearOfWork;
 }
 
+string Junior::ToString()
+{
+	std::string str = Name;
+	str.append(" ");
+	str.append(SecondName);
+	str.append(" ");
+	str.append(SurName);
+	return str;
+}
+
+char* Junior::ToCharArray()
+{
+	char arr[765] = {};
+	_tcscpy_s(arr, Name);
+	strcat_s(arr, " ");
+	strcat_s(arr, SecondName);
+	strcat_s(arr, " ");
+	strcat_s(arr, SurName);
+	return arr;
+}
+
 void Junior::SetName(_TCHAR _Name[255])
 {
 	_tcscpy_s(Name, _Name);

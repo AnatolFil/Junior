@@ -1,6 +1,7 @@
 #pragma once
 
 #include<TCHAR.H>
+#include<mbstring.h>
 
 //Address entity
 class Address
